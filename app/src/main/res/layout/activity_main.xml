@@ -18,31 +18,25 @@
         android:layout_centerHorizontal="true"
         android:text="FORMULIR WAJIB" />
 
-    <TextView
-        android:id="@+id/textView"
-        style="@style/Base.TextAppearance.AppCompat.Subhead"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView2"
-        android:layout_centerHorizontal="true"
-        android:text="Harap Diisi" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
         android:src="@mipmap/ic_launcher" />
 
     <EditText
         android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignTop="@+id/textView3" />
+        android:layout_alignRight="@+id/imageView"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="21dp" />
 
     <TextView
         android:id="@+id/textView3"
@@ -57,9 +51,9 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText"
+        android:layout_alignTop="@+id/textView4"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
         android:text="Organisasi" />
 
     <RadioGroup
@@ -67,11 +61,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignBottom="@+id/checkBox4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView5"
-        android:layout_toLeftOf="@+id/textView"
-        android:layout_toStartOf="@+id/textView">
+        android:layout_alignTop="@+id/checkBox"
+        android:layout_centerHorizontal="true">
 
         <RadioButton
             android:id="@+id/radioButton"
@@ -106,18 +97,18 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBox"
         android:layout_alignEnd="@+id/textView2"
         android:layout_alignRight="@+id/textView2"
-        android:layout_below="@+id/editText"
         android:text="Sub Organ" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView4"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_below="@+id/textView4"
+        android:layout_above="@+id/checkBox2"
+        android:layout_toEndOf="@+id/textView7"
+        android:layout_toRightOf="@+id/textView7"
         android:checked="false"
         android:text="BASKET" />
 
@@ -127,7 +118,7 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/checkBox"
         android:layout_alignStart="@+id/checkBox"
-        android:layout_below="@+id/checkBox"
+        android:layout_centerVertical="true"
         android:checked="false"
         android:text="MEDSAN" />
 
@@ -158,8 +149,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView6"
-        android:layout_toLeftOf="@+id/checkBox4"
-        android:layout_toStartOf="@+id/checkBox4" />
+        android:layout_toLeftOf="@+id/textView7"
+        android:layout_toStartOf="@+id/textView7" />
 
     <Button
         android:id="@+id/button"
@@ -174,10 +165,9 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView3"
-        android:layout_alignRight="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_below="@+id/radioGroup"
-        android:layout_marginTop="19dp"
         android:text="Kelas" />
 
     <TextView
@@ -186,6 +176,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/spinner"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
         android:text="HASIL" />
 
 </RelativeLayout>
