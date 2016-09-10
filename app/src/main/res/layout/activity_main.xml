@@ -48,7 +48,7 @@
 
         <EditText
             android:id="@+id/editTextNama"
-            android:layout_width="wrap_content"
+            android:layout_width="380dp"
             android:layout_height="wrap_content"
             android:layout_alignEnd="@+id/imageView"
         android:layout_alignParentLeft="true"
@@ -65,12 +65,12 @@
         android:text="Organisasi" />
 
         <RadioGroup
-            android:id="@+id/radioGroup"
+            android:id="@+id/radioGroupOrgan"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignBottom="@+id/checkBox4"
-            android:layout_alignTop="@+id/checkBox"
-            android:layout_toStartOf="@+id/checkBox"
+            android:layout_alignBottom="@+id/checkBoxBdi"
+            android:layout_alignTop="@+id/checkBoxBasket"
+            android:layout_toStartOf="@+id/checkBoxBasket"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -119,44 +119,44 @@
             android:gravity="center">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkBoxBasket"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_above="@+id/checkBox2"
+                android:layout_above="@+id/checkBoxPaski"
                 android:layout_centerHorizontal="true"
                 android:checked="false"
                 android:gravity="center"
                 android:text="BASKET" />
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBoxPaski"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/checkBox"
-                android:layout_alignStart="@+id/checkBox"
+                android:layout_alignLeft="@+id/checkBoxBasket"
+                android:layout_alignStart="@+id/checkBoxBasket"
                 android:layout_centerVertical="true"
                 android:checked="false"
                 android:gravity="center"
                 android:text="PASKI" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBoxMetic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/checkBox2"
-                android:layout_alignStart="@+id/checkBox2"
-                android:layout_below="@+id/checkBox2"
+                android:layout_alignLeft="@+id/checkBoxPaski"
+                android:layout_alignStart="@+id/checkBoxPaski"
+                android:layout_below="@+id/checkBoxPaski"
                 android:checked="false"
                 android:gravity="center"
                 android:text="METIC" />
 
             <CheckBox
-                android:id="@+id/checkBox4"
+                android:id="@+id/checkBoxBdi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignLeft="@+id/checkBox3"
-                android:layout_alignStart="@+id/checkBox3"
-                android:layout_below="@+id/checkBox3"
+                android:layout_alignLeft="@+id/checkBoxMetic"
+                android:layout_alignStart="@+id/checkBoxMetic"
+                android:layout_below="@+id/checkBoxMetic"
                 android:checked="false"
                 android:gravity="center"
                 android:text="BDI" />
@@ -171,20 +171,21 @@
             android:text="Kelas" />
 
         <Spinner
-            android:id="@+id/spinner"
+            android:id="@+id/spinnerKelas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/checkBox"
+            android:layout_alignTop="@+id/checkBoxBasket"
             android:layout_toEndOf="@+id/buttonDaftar"
-            android:layout_toRightOf="@+id/buttonDaftar" />
+            android:layout_toRightOf="@+id/buttonDaftar"
+            android:gravity="center" />
 
     <Button
         android:id="@+id/buttonDaftar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/checkBox4"
-        android:layout_alignStart="@+id/checkBox4"
-        android:layout_below="@+id/radioGroup"
+        android:layout_alignLeft="@+id/checkBoxBdi"
+        android:layout_alignStart="@+id/checkBoxBdi"
+        android:layout_below="@+id/radioGroupOrgan"
         android:layout_gravity="center_horizontal"
         android:text="DAFTAR" />
 
@@ -192,10 +193,10 @@
         android:id="@+id/textViewHasil"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/spinner"
+        android:layout_alignEnd="@+id/spinnerKelas"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/spinner"
+        android:layout_alignRight="@+id/spinnerKelas"
         android:layout_below="@+id/buttonDaftar"
         android:layout_marginTop="40dp"
         android:gravity="center|center_horizontal"
