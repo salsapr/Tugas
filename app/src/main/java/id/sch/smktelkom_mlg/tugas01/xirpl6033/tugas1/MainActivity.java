@@ -45,29 +45,25 @@ public class MainActivity extends AppCompatActivity {
             private void doClick() {
                 String hasil = null;
                 String tugas = "";
-                String tugas2 = "";
-                String tugas3 = "";
-                String tugas4 = "";
 
-                String nama = etNama.getText().toString();
+                String nama = etNama.getText() + " ";
                 if (cbBasket.isChecked()) {
-                    tugas = cbBasket.getText().toString();
+                    tugas += cbBasket.getText() + " ";
                 }
                 if (cbPaski.isChecked()) {
-                    tugas = cbPaski.getText().toString();
+                    tugas += cbPaski.getText() + " ";
                 }
                 if (cbMetic.isChecked()) {
-                    tugas = cbMetic.getText().toString();
+                    tugas += cbMetic.getText() + " ";
                 }
                 if (cbBdi.isChecked()) {
-                    tugas = cbBdi.getText().toString();
+                    tugas += cbBdi.getText() + " ";
                 }
                 if (rgOrgan.getCheckedRadioButtonId() != -1) {
                     RadioButton rb = (RadioButton)
                             findViewById(rgOrgan.getCheckedRadioButtonId());
                     hasil = rb.getText().toString();
-                    tvHasil.setText(nama + " " + spKelas.getSelectedItem().toString() + hasil + " Mengikuti " + tugas + " " + tugas2 +
-                            " " + tugas3 + " " + tugas4);
+                    tvHasil.setText(nama + " " + spKelas.getSelectedItem().toString() + " " + " mendaftar " + hasil + " " + " juga mengikuti " + tugas);
                 }
             }
         });
