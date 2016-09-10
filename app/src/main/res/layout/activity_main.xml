@@ -177,7 +177,8 @@
             android:layout_alignTop="@+id/checkBoxBasket"
             android:layout_toEndOf="@+id/buttonDaftar"
             android:layout_toRightOf="@+id/buttonDaftar"
-            android:gravity="center" />
+            android:gravity="center"
+            android:spinnerMode="dropdown" />
 
     <Button
         android:id="@+id/buttonDaftar"
